@@ -9,4 +9,4 @@ create table cuentas (
 )
 
 insert into cuentas (numero_cuenta, cedula, fecha_creacion, saldo)
-values('12345','1234567890','2025-11-14',500 );
+values('12345','1234567890','2022-11-14',500 );

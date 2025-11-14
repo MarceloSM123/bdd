@@ -20,4 +20,5 @@ values ('1234567890', 'Luis','Saenz','11121314151617181920',10000.23);
 select * from usuario
 select * from cuentas
 
-select * from usuario us, cuentas cu where us.cedula=cu.cedula and (cu.saldo>'100' and cu.saldo<'1000') 
+select us.cuenta, cu.numero_cuenta from usuario us, cuentas cu where us.cedula=cu.cedula and (cu.saldo>'100' and cu.saldo<'1000') 
+select us.cuenta, cu.numero_cuenta from usuario us, cuentas cu where us.cedula=cu.cedula and cu.fecha_creacion between '2022-09-21' and '2023-09-21'

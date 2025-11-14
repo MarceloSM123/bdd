@@ -17,9 +17,8 @@ references profesores(codigo)
 
 select es.nombre,es.apellido from estudiantes es, profesores pr where es.codigo_profesor=pr.codigo and es.apellido like '%n%'
 select es.* from estudiantes es, profesores pr where es.codigo_profesor=pr.codigo and pr.nombre='Francisco'
-select * from estudiantes es, profesores pr where es.codigo_profesor=pr.codigo
-select codigo_profesor,count(codigo_profesor) as total_estudiantes from estudiantes es, profesores pr where es.codigo_profesor=pr.codigo group by codigo_profesor
-select AVG(EXTRACT(YEAR FROM AGE(CURRENT_DATE, fecha_nacimiento))) as edad_promedio  from estudiantes es 
+
+
 
 
 

@@ -34,3 +34,4 @@ insert into transacciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
 values (10,'10305',89.78,'D','14/08/1999','17:12:12')
 
 select * from transacciones
+

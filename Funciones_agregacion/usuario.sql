@@ -22,3 +22,5 @@ select * from cuentas
 
 select us.cuenta, cu.numero_cuenta from usuario us, cuentas cu where us.cedula=cu.cedula and (cu.saldo>'100' and cu.saldo<'1000') 
 select us.cuenta, cu.numero_cuenta from usuario us, cuentas cu where us.cedula=cu.cedula and cu.fecha_creacion between '2022-09-21' and '2023-09-21'
+
+select * from usuario us, cuentas cu

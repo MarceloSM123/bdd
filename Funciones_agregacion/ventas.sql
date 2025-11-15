@@ -17,3 +17,8 @@ insert into ventas (id_venta, codigo_producto, fecha_venta, cantidad)
 values(3, 124, '2025-12-05', 11);
 
 select pr.nombre, pr.stock, ve.cantidad from ventas ve, productos pr where ve.codigo_producto=pr.codigo and pr.nombre like '%m%' or pr.descripcion='o'
+select * from ventas ve, productos pr  where ve.codigo_producto=pr.codigo 
+--- Funcion de agregacion 1
+select max(pr.precio) as precio_maximo from ventas ve, productos pr where ve.codigo_producto=pr.codigo
+--Funcion de agregacion 2
+select sum(ve.cantidad) as cantidad_total_vendida from ventas ve, productos pr where ve.codigo_producto=pr.codigo

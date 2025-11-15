@@ -23,3 +23,9 @@ values(3,'play station',7 );
 
 select vi.nombre, vi.descripcion, vi.valoracion, pl.nombre_plataforma from videojuegos vi, plataformas pl where pl.codigo_videojuego=vi.codigo and vi.descripcion='Guerra' and vi.valoracion>7 or vi.nombre like 'C%' and vi.valoracion>8 or vi.nombre like 'D%' 
 select  pl.* from videojuegos vi, plataformas pl where pl.codigo_videojuego=vi.codigo and vi.nombre='God of war'
+select  * from videojuegos vi, plataformas pl
+
+-- funcion de agregacion 1
+select codigo_videojuego, count(nombre_plataforma) from videojuegos vi, plataformas pl where pl.codigo_videojuego=vi.codigo group by codigo_videojuego
+--funcion de agregacion 2
+select round(avg(valoracion),2) as valoracion_promedio from videojuegos;
